@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAL DE NOTICÍAS GALACTICA</title>
     <link rel="stylesheet" href="./styles/stylesheet.css">
+    <script src="/c1 - Web Componentes/desafio-01/src/Components/CardNews.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>By Jim Carrey</span>
-                <a href="#">Darth Vader Contrata Devs</a>
-                <p>Darth Vader procura desensolvedores que sabem trabalhar com componetes.</p>
-            </div>
-            <div class="card__rigth">
-                <img height="200px" src="./imgs/Darth-Vader-Office.jpg" alt="Darth Vader tomando café no escritório">
-            </div>
-        </div>
-    </div>
+
+    <card-news 
+    autor="Jim Carrey"
+    title="Darth Vader Contrata Devs"
+    link-url="www.goole.com"
+    photo="./imgs/Darth-Vader-Office.jpg"
+    content="Darth Vader procura desensolvedores que sabem trabalhar com componetes.">
+    </card-news>
+
+    <card-news 
+    title="Layoffs na tecnologia"
+    link-url="www.youtube.com"
+    content="Com o avanço das IA's, desenvolvedores estão sofrendo layoffs por todo o mundo.">
+    </card-news>
+
 </body>
 </html>
